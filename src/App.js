@@ -1,9 +1,10 @@
-
+import Home from './pages/homes/Home';
+// import { ArrowUpward } from "@material-ui/icons";
 
 function App() {
   return (
     <div className="App">
-      Social Media
+      <Home/>
       
     </div>
   );
