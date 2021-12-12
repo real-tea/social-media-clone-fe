@@ -4,7 +4,7 @@ import './rightbar.css';
 const Rightbar = () => {
     return (
         <div>
-            
+            Righbar
         </div>
     )
 }
