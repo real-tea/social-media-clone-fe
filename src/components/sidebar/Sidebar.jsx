@@ -39,10 +39,7 @@ const Sidebar = () => {
                 <img className = " sidebarFriendImg " src = "/assets/person/2.jpg" alt = " "/>
             <span clasName = "sidebarFriendName"> Rein </span>
             </li>
-            <li className ="sidebarFriend" >
-                <img className = " sidebarFriendImg " src = "/assets/person/2.jpg" alt = " "/>
-            <span clasName = "sidebarFriendName"> Rein </span>
-            </li>
+           
             
           {/* {Users.map((u) => (
             <CloseFriend key={u.id} user={u} />
