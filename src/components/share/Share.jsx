@@ -32,7 +32,7 @@ const Share = () => {
                             <EmojiEmotions htmlColor = "#F0A500" className = "shareIcon"/>
                             <span className = "shareOptionText"> React </span>
                         </div>
-                        <button className = "shareButton"> Share </button>
+                        <button className = "shareButton">Share</button>
 
                     </div>
                 </div>

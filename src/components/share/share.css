@@ -67,9 +67,10 @@
 .shareButton{
     border: none;
     padding: 7px;
-    border-radius: 5px;
+    border-radius: 7px;
     background-color: #FFE300;
-    font-weight: 1000;
+    font-weight : 500;
+    margin-left : 80px;
     margin-right: 20px;
     cursor: pointer;
     color: white;
