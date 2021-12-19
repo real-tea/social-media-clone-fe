@@ -1,6 +1,6 @@
 import React from 'react';
 import "./post.css";
-import { MoreVert } from "@material-ui/icons";
+import { MoreVert , ArrowUpward } from "@material-ui/icons";
 
 const Post = () => {
     return (
@@ -18,9 +18,18 @@ const Post = () => {
             </div>
             <div className = "postCenter"> 
                 <span className = "postText"> Hey it is my first Post</span>  
-                <img src = "/assets/post/1.jpg " alt = " "/> 
+                <img className = "postImg" src = "/assets/post/1.jpg " alt = " "/> 
             </div>
-            <div className = "postBottom"> </div>
+            <div className = "postBottom">
+                <div className = "postBottomLeft">
+                    <img className = "upvoteIcon" src = "/assets/upvote.jpg" alt = ""/>
+                    {/* <ArrowUpward color = "orange"/> */}
+                    <span className = "postUpvoteCounter">32</span>
+                </div>
+                <div className = "postBottomRight">
+                    <span className = "postComments">9 comments</span>
+                </div>
+            </div>
 
             </div>
             
