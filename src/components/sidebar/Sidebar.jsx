@@ -37,7 +37,7 @@ const Sidebar = () => {
         <ul className="sidebarFriend">
             <li className ="sidebarFriend" >
                 <img className = " sidebarFriendImg " src = "/assets/person/2.jpg" alt = " "/>
-            <span clasName = "sidebarFriendName"> Rein </span>
+            <span clasName = "sidebarFriendName"> Niko Pintu </span>
             </li>
            
             
