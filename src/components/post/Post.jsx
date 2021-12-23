@@ -1,10 +1,19 @@
-import React from 'react';
+import { useState } from 'react';
 import "./post.css";
 import { MoreVert , ArrowUpward } from "@material-ui/icons";
 import { Users } from "../../tempData";
 
 
 const Post = ({post}) => {
+
+    const [upvoted,setupvote] = useState(post.upvote);
+    const [isupvoted , setisupvoted ] = useState(false);
+
+    const Upvotehandler = () =>{ 
+        setupvote(isupvoted? upvoted - 1 : upvoted + 1 );
+        setisupvoted(!isupvoted);
+    }
+
     return (
         <div className = "post">
             <div className = "postWrapper"> 
@@ -26,9 +35,9 @@ const Post = ({post}) => {
             </div>
             <div className = "postBottom">
                 <div className = "postBottomLeft">
-                    <img className = "upvoteIcon" src = "/assets/upvote.jpg" alt = ""/>
+                    <img className = "upvoteIcon" src = "/assets/upvote.jpg" onClick = {Upvotehandler} alt = ""/>
                     {/* <ArrowUpward color = "orange"/> */}
-                    <span className = "postUpvoteCounter">{post.upvote}</span>
+                    <span className = "postUpvoteCounter">{upvoted}</span>
                 </div>
                 <div className = "postBottomRight">
                     <span className = "postComments">{post.comment} comments</span>

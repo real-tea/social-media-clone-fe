@@ -1,4 +1,5 @@
 import React from 'react';
+import Friendslist from "../Friendslist/Friendslist";
 import { RssFeed,
         PlayCircleFilledOutlined,
         Explore,
@@ -6,7 +7,11 @@ import { RssFeed,
         WorkOutline,
         Event,
         School  } from "@material-ui/icons";
+import { Users } from '../../tempData';
+
 import "./sidebar.css";
+
+
 
 const Sidebar = () => {
     return (
@@ -34,16 +39,12 @@ const Sidebar = () => {
         <button className="sidebarButton">Show More</button>
         
         <hr className="sidebarHr" />
-        <ul className="sidebarFriend">
-            <li className ="sidebarFriend" >
-                <img className = " sidebarFriendImg " src = "/assets/person/2.jpg" alt = " "/>
-            <span clasName = "sidebarFriendName"> Niko Pintu </span>
-            </li>
+        <ul className="sidebarFriendList">
+             
+          {Users.map((u) => (
+            <Friendslist key={u.id} user={u} />
+          ))}       
            
-            
-          {/* {Users.map((u) => (
-            <CloseFriend key={u.id} user={u} />
-          ))} */}
         </ul> 
       </div>
             
